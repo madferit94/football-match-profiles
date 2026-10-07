@@ -4,11 +4,11 @@
 
 [한국어](README.ko.md) · [Research questions](docs/PROBLEM_DEFINITION.md) · [Validation](docs/VALIDATION.md) · [Publication plan](docs/PUBLICATION_PLAN.ko.md)
 
-A research portfolio based on Minseob Eom's master's thesis, *Clustering Tactical Types and Analyzing Type-Specific Match Characteristics in Football: Evidence from Europe’s Big Five Leagues* (2026).
+A research project deriving and comparing team-match profiles across Europe’s Big Five leagues. This repository shares the **problem framing → data preparation → clustering → feature interpretation → league and season comparisons** through code, data, and result tables.
 
-The study groups **team-match observations**, explains the resulting profiles, and compares their distributions across leagues and seasons. “Tactical types” in the thesis refers to statistical patterns in match records; the labels do not directly measure formations, coaching intent, or tactical effectiveness.
+The study groups **team-match observations**, explains the resulting profiles, and compares their distributions across leagues and seasons. The profiles refer to statistical patterns in match records; the labels do not directly measure formations, coaching intent, or tactical effectiveness.
 
-> **Release status — research archive with documented validation limits, 8 October 2026.** The saved CSVs were audited and their summaries recalculated. The three historical notebooks have not been rerun end to end. Two cluster counts differ from thesis Table 8; both versions are documented below. This package does not claim exact thesis reproduction.
+> **Validation status — 8 October 2026.** The saved CSVs were audited and their summaries recalculated. The three historical notebooks have not been rerun end to end. Two cluster counts differ from thesis Table 8; both versions are documented below. End-to-end rerunning remains pending.
 
 ## Explore
 
@@ -87,7 +87,9 @@ Thesis Table 8 (printed p.24; PDF p.33) reports **4,017 / 8,035** rows for profi
 
 ## Interpretation and use
 
-The profiles can support exploratory opponent comparison, selection of similar match examples, and hypotheses for video review. A club can appear in multiple profiles across matches. The analysis does not establish which profile causes wins or which tactic a coach should choose.
+In this sample, the four profiles differ in combinations of possession, danger-area passing, shots, PPDA, and clearances. For example, the two possession-based profiles average 14.42 versus 19.98 shots and 7.45 versus 12.56 DEEP. This allows a description such as “possession-based” to be specified further through progression and shooting records. Superiority over a possession-only grouping has not been tested.
+
+A proposed next use is to inspect a team's profile mix and select matches that depart from its usual pattern for contextual video review. This application has not been evaluated for analyst time savings or decision quality. The analysis does not establish which profile causes wins or which tactic a coach should choose.
 
 ## Limitations
 
@@ -136,8 +138,17 @@ python scripts/verify_snapshot.py \
 
 Both CSVs are bundled, so `--source-root .` reads this repository. The audit refuses to replace existing review outputs or write inside the source folder. It does **not** reproduce collection, clustering, classifiers, or SHAP. For the historical notebook order and prerequisites, see [reproduction status](docs/REPRODUCIBILITY.md).
 
-## Source and attribution
+## Author and contact
 
-Author: **Minseob Eom (엄민섭)**. Thesis: *축구 경기기록 기반 전술 유형 군집화와 유형별 경기기록 특성 분석: 유럽 5대 리그를 중심으로*, Korea National Sport University, 2026, as identified on the supplied document.
+**Minseob Eom · 엄민섭**
 
-The thesis and third-party reference PDFs are not included in this repository. Provider redistribution permissions have not been established here; no license is asserted over their data. The original thesis title is retained for attribution; the portfolio title emphasizes the measured construct, match-record profiles.
+- Email: [wowzc@naver.com](mailto:wowzc@naver.com)
+- LinkedIn: [Minseob Eom](https://www.linkedin.com/in/minseob-eom-97b410375/)
+- Instagram: [@madferit94](https://www.instagram.com/madferit94/)
+- GitHub: [@madferit94](https://github.com/madferit94)
+
+## Research background and data sources
+
+This project shares data, analytical steps, and results developed during master's research. Related study: *Clustering Tactical Types and Analyzing Type-Specific Match Characteristics in Football: Evidence from Europe’s Big Five Leagues* (2026). The thesis PDF is not published here.
+
+Data sources are Sofascore and Understat. The scope of verified field definitions and collection provenance is documented in the [data guide](data/README.md). No license is asserted over provider data.
