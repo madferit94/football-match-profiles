@@ -81,9 +81,13 @@ The values below were recalculated from the existing labeled CSV, without refitt
 
 Evidence: [counts](outputs/review/cluster_counts.csv), [all profile means](outputs/review/cluster_profile.csv), [league shares](outputs/review/league_cluster_share.csv), [season shares](outputs/review/season_cluster_share.csv), and [audit record](outputs/review/snapshot_audit.json).
 
-### Thesis-to-data discrepancy
+### Analysis versions and reproducibility settings
 
-Thesis Table 8 (printed p.24; PDF p.33) reports **4,017 / 8,035** rows for profiles 2-1 / 2-2. The current CSV and saved outputs in the three selected notebooks contain **4,122 / 7,930**. Both total 21,394. The cause is unresolved; the difference is not evidence that 105 identifiable matches changed labels. No paper values or original files were silently corrected. See [the evidence and remaining checks](docs/VALIDATION.md).
+The 14 indicators were selected by reviewing match-record categories used in prior research and considering data availability. Candidate cluster counts were examined using silhouette scores, as documented in the study's variable-selection and clustering procedures.
+
+According to the author, the thesis reports results from the writing-stage analysis, while this repository contains results from a subsequent notebook rerun. Thesis Table 8 reports **4,017 / 8,035** observations for profiles 2-1 / 2-2; the current saved data contain **4,122 / 7,930**. Both versions total 21,394 observations.
+
+The published RQ1 code specifies `random_state=42` and `n_init=10`. Run-specific configuration records linking the thesis analysis to the current snapshot have not been established, so the count difference is not attributed to a particular seed change. Stability comparisons across multiple random seeds are identified as follow-up validation. See the [validation record](docs/VALIDATION.md).
 
 ## Interpretation and use
 

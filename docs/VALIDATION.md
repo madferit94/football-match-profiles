@@ -21,9 +21,9 @@ Review date: 2026-10-08. This is a saved-artifact review, not a full model rerun
 | Table 8, profile 2-2 | 8,035 (37.56%) | 7,930 (37.07%) | Same |
 | Table 5, PCA k=2 silhouette | 0.422 | 0.421478 in saved silhouette CSV | Not identical at three decimals; do not silently treat as rounding equivalence |
 
-Table 8 is printed p.24 / PDF p.33; Table 5 is printed p.20 / PDF p.29. The supplied PDF table pages were visually inspected. All three selected notebooks' stored outputs use 4,122 / 7,930. This supports a consistent current snapshot but does not establish why the paper differs. No row-level historical label file yielding 4,017 / 8,035 was established. Do not call the difference a confirmed typo, rerun difference, or 105 identified reassigned cases.
+Table 8 is printed p.24 / PDF p.33; Table 5 is printed p.20 / PDF p.29. The supplied PDF table pages were visually inspected. All three selected notebooks' stored outputs use 4,122 / 7,930. The author reports that the saved results come from a notebook rerun after the thesis analysis. This author-provided run history is distinguished from verified configuration provenance: no historical row-level label file yielding 4,017 / 8,035, or run-specific record of the original seed, was established. The published RQ1 code specifies `random_state=42` and `n_init=10`. The review does not attribute the difference to a specific seed change or identify 105 reassigned cases. Multiple-seed stability testing remains follow-up work; it is not reported as a completed experiment.
 
-**한국어:** 논문과 현재 결과의 차이를 공개적으로 구분해야 합니다. 원인이 확인되기 전 논문을 오타라고 단정하거나 현재 데이터를 논문 수치에 맞춰 바꾸면 안 됩니다. 표 7 평균이 일치해도 표 8 사례 수가 자동 검증되는 것은 아닙니다.
+**한국어:** 저자 설명에 따르면 논문 작성 당시 결과와 이후 노트북 재실행 결과의 차이입니다. 당시 실행 설정과 현재 결과를 연결하는 기록은 확보되지 않았으므로, 특정 난수 시드 변경이 원인이라고 확정하지 않습니다. 공개 RQ1 코드는 `random_state=42`, `n_init=10`이며 다중 시드 안정성 비교는 후속 검증으로 구분합니다. 표 7 평균의 일치와 표 8 사례 수의 버전 차이는 별도로 기록합니다.
 
 ## Notebook selection / 기준 후보 선택
 
