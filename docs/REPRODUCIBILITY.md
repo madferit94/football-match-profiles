@@ -40,3 +40,22 @@ Korean figure fonts use AppleGothic on macOS and Malgun Gothic on Windows. A Lin
 - Compare new outputs against the selected version, documenting any changes instead of overwriting paper claims.
 
 No new clustering or classification performance result was produced by this packaging task.
+
+## Python companion scripts / 파이썬 사본
+
+The `.py` files in `notebooks/` preserve notebook cell order. Markdown cells become comments, and `# %%` markers keep cell boundaries visible in editors. An explicit `from IPython.display import display` supplies the notebook display helper. The RQ2 `!pip install scikit-posthocs` cell becomes an installation instruction comment. Other code-cell contents are unchanged. [Export hashes and adaptation record](PYTHON_EXPORTS.json).
+
+`.py` 파일은 노트북의 순서와 분석 코드를 유지합니다. 설명 셀은 주석으로 옮겼고 `# %%`로 셀을 구분했습니다. `display` import와 설치 셀의 안내 주석 외에는 코드 셀 내용을 변경하지 않았습니다. 결과의 완전한 동일성은 전체 실행으로 검증하지 않았습니다.
+
+From the repository root, after installing the notebook dependencies listed above / 위 라이브러리를 준비한 후 저장소 루트에서 실행:
+
+```bash
+python -m pip install scikit-posthocs
+python notebooks/01_rq1_clustering.py
+python notebooks/02_rq2_profile_explanation.py
+python notebooks/03_rq3_league_season_distribution.py
+```
+
+Run in a separate working copy: these scripts retain the notebooks' existing output paths and may overwrite saved analysis results. Interactive plot windows may need to be closed to continue. `requirements-audit.txt` covers only the CSV audit, not all notebook/script dependencies.
+
+기존 노트북과 동일한 출력 경로를 사용하므로 실행하면 저장된 분석 결과가 덮어써질 수 있습니다. 별도 작업 사본에서 실행하세요. 그림 창을 닫아야 다음 단계로 진행될 수 있습니다. `requirements-audit.txt`는 CSV 검사 전용이며 전체 분석 라이브러리를 설치하는 파일이 아닙니다.

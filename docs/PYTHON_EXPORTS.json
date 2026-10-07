@@ -1,0 +1,41 @@
+[
+  {
+    "notebook": "notebooks/01_rq1_clustering.ipynb",
+    "script": "notebooks/01_rq1_clustering.py",
+    "notebook_sha256": "81af3961686d0d4a2ed9c84970fd38f1a57f72c1e8a1a27366993b10ac76a46b",
+    "script_sha256": "0a3d9a3423cd2c51846319bb7ec50a4f7c20d548a39ba5188ba8d9e57e7ad260",
+    "code_cell_order_preserved": true,
+    "added_import": "from IPython.display import display",
+    "cell_adaptations": [],
+    "syntax_check": "passed",
+    "full_execution": false
+  },
+  {
+    "notebook": "notebooks/02_rq2_profile_explanation.ipynb",
+    "script": "notebooks/02_rq2_profile_explanation.py",
+    "notebook_sha256": "639a4f3e593366351e68429b7f0f8e765a5d7246c581f8c6671eb84ee80585a2",
+    "script_sha256": "fdc3413514adb7d054381ef82cd61510bd5f84d906b7c261231e8df5256847fb",
+    "code_cell_order_preserved": true,
+    "added_import": "from IPython.display import display",
+    "cell_adaptations": [
+      {
+        "cell": 4,
+        "original": "!pip install scikit-posthocs",
+        "replacement": "# Install before running: python -m pip install scikit-posthocs"
+      }
+    ],
+    "syntax_check": "passed",
+    "full_execution": false
+  },
+  {
+    "notebook": "notebooks/03_rq3_league_season_distribution.ipynb",
+    "script": "notebooks/03_rq3_league_season_distribution.py",
+    "notebook_sha256": "726ef8de4d886ce584dc2ca1e4579dd4f19eff3283ccc4289825cb2512c52f00",
+    "script_sha256": "9ae486329e7487ec18fcb37a6b9a48aa359ea7fd7ac87e144b5667bbcc9bf6dc",
+    "code_cell_order_preserved": true,
+    "added_import": "from IPython.display import display",
+    "cell_adaptations": [],
+    "syntax_check": "passed",
+    "full_execution": false
+  }
+]

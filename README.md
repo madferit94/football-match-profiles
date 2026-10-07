@@ -111,6 +111,18 @@ The profiles can support exploratory opponent comparison, selection of similar m
 | `data/` | Cleaned input, coverage tables, and category-based metric documentation |
 | `docs/` | Problem decomposition, evidence, file decisions, and notebook provenance |
 
+## Python scripts
+
+Companion `.py` files sit beside the notebooks in `notebooks/`, preserving code-cell order and analysis logic.
+
+| Analysis | Notebook | Python script |
+|---|---|---|
+| RQ1 profile derivation | [Notebook](notebooks/01_rq1_clustering.ipynb) | [Python](notebooks/01_rq1_clustering.py) |
+| RQ2 profile explanation | [Notebook](notebooks/02_rq2_profile_explanation.ipynb) | [Python](notebooks/02_rq2_profile_explanation.py) |
+| RQ3 distribution comparison | [Notebook](notebooks/03_rq3_league_season_distribution.ipynb) | [Python](notebooks/03_rq3_league_season_distribution.py) |
+
+The exports add an explicit `display` import and replace the notebook's inline `!pip install` with a separate-installation comment. Code-cell equivalence and Python syntax were checked; the full analysis was not rerun. See [execution notes](docs/REPRODUCIBILITY.md#python-companion-scripts--파이썬-사본).
+
 ## Reproduce the snapshot audit
 
 The audit requires Python, pandas, NumPy, and SciPy. From this repository root:

@@ -111,6 +111,18 @@
 | `data/` | 정제 입력 CSV, 기간·리그별 범위, 카테고리별 지표 사전 |
 | `docs/` | 문제 정의, 검증, 파일 판단, 노트북 계보 |
 
+## 파이썬 스크립트
+
+노트북과 같은 `notebooks/` 폴더에 코드 셀 순서와 분석 내용을 유지한 `.py` 사본을 제공합니다.
+
+| 분석 | 노트북 | 파이썬 스크립트 |
+|---|---|---|
+| RQ1 유형 도출 | [Notebook](notebooks/01_rq1_clustering.ipynb) | [Python](notebooks/01_rq1_clustering.py) |
+| RQ2 유형 설명 | [Notebook](notebooks/02_rq2_profile_explanation.ipynb) | [Python](notebooks/02_rq2_profile_explanation.py) |
+| RQ3 분포 비교 | [Notebook](notebooks/03_rq3_league_season_distribution.ipynb) | [Python](notebooks/03_rq3_league_season_distribution.py) |
+
+일반 Python에서 필요한 `display` import를 추가하고, 노트북의 `!pip install`은 별도 설치 안내 주석으로 바꿨습니다. 셀 내용 대조와 문법 검사를 완료했으며 전체 분석은 재실행하지 않았습니다. [실행 안내](docs/REPRODUCIBILITY.md#python-companion-scripts--파이썬-사본)를 참고하세요.
+
 ## CSV 검증 재실행
 
 Python·pandas·NumPy·SciPy가 필요합니다. 이 저장소 루트에서 실행합니다.
