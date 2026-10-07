@@ -1,0 +1,22 @@
+[
+  [
+    "data/processed/master_5leagues_long_clean.csv",
+    "data/processed/아카이브/master_5leagues_long_clean.csv"
+  ],
+  [
+    "notebooks/outputs/figures/.DS_Store",
+    "notebooks/outputs/tables/.DS_Store"
+  ],
+  [
+    "notebooks/outputs/tables/rq3_1_chisq_season_cluster.csv",
+    "outputs/tables/rq3_1_chisq_season_cluster.csv"
+  ],
+  [
+    "notebooks/노트북 및 논문/논문/Predicting Football Team Performance with Explainable AI Leveraging SHAP to Identify Key Team Level Performance Metrics .pdf",
+    "notebooks/노트북 및 논문/논문/Predicting Football Team Performance with Explainable AI Leveraging SHAP to Identify Key Team-Level Performance Metrics.pdf"
+  ],
+  [
+    "notebooks/노트북 및 논문/논문/한국 프로축구 경기력에 따른 특성 군집화.pdf.pdf",
+    "notebooks/노트북 및 논문/논문/한국 프로축구팀의 경기력에 따른 군집화.pdf"
+  ]
+]

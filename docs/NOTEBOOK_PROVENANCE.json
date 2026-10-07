@@ -1,0 +1,29 @@
+[
+  {
+    "source": "notebooks/02_rq2_cluster_difference_xai 수정본.ipynb",
+    "destination": "notebooks/02_rq2_profile_explanation.ipynb",
+    "source_sha256": "670d33914eeaf1f9f844c642d25c5d0df229c09fad39ce164ea9d61098cb8c1b",
+    "published_copy_sha256": "639a4f3e593366351e68429b7f0f8e765a5d7246c581f8c6671eb84ee80585a2",
+    "code_sources_unchanged": true,
+    "outputs_cleared": true,
+    "full_rerun": false
+  },
+  {
+    "source": "notebooks/03_rq3_cluster_difference_xai 수정본 복사본.ipynb",
+    "destination": "notebooks/03_rq3_league_season_distribution.ipynb",
+    "source_sha256": "08788423148af7eae3f5f7aa318027c36ce5a9ad980414dae74092bf11928f8c",
+    "published_copy_sha256": "726ef8de4d886ce584dc2ca1e4579dd4f19eff3283ccc4289825cb2512c52f00",
+    "code_sources_unchanged": true,
+    "outputs_cleared": true,
+    "full_rerun": false
+  },
+  {
+    "source": "notebooks/06,22: 01_rq1_tactical_clustering_k_selection 수정본 복사본.ipynb",
+    "destination": "notebooks/01_rq1_clustering.ipynb",
+    "source_sha256": "5b0041035e75895825a8a0903b342cdbf5b37d739aaca4fd04d224d81a30d5b8",
+    "published_copy_sha256": "81af3961686d0d4a2ed9c84970fd38f1a57f72c1e8a1a27366993b10ac76a46b",
+    "code_sources_unchanged": true,
+    "outputs_cleared": true,
+    "full_rerun": false
+  }
+]

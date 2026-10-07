@@ -1,0 +1,64 @@
+﻿column,category,label_ko,label_en,unit_or_encoding,clustering_input,dtype,missing,range_or_examples
+possession,possession,점유율,Possession,%,True,float64,0,16 – 84
+passes,possession,패스 기록,Passes,count,True,float64,0,64 – 944
+final_third_entries,progression,상대진영 1/3 투입,Final-third entries,count,True,float64,0,10 – 145
+DEEP,progression,위험 지역 진입 패스,Danger-area passing (thesis label),count,True,int64,0,0 – 42
+long_balls,delivery,롱볼,Long balls,count,True,float64,0,14 – 129
+goalkeeping_goal_kicks,delivery,골킥,Goal kicks,count,True,float64,0,0 – 26
+crosses,delivery,크로스,Crosses,count,True,float64,0,0 – 64
+dribbles,delivery,드리블,Dribbles,count,True,float64,0,1 – 59
+shots,shooting,전체 슈팅,Total shots,count,True,float64,0,0 – 46
+box_shots,shooting,박스 내 슈팅,Shots inside the box,count,True,float64,0,0 – 32
+ppda_val,defense,PPDA: 수비 행동당 허용 패스 지표,PPDA: passes allowed per defensive action,ratio,True,float64,0,2 – 193
+tackles,defense,태클,Tackles,count,True,float64,0,1 – 46
+interceptions,defense,인터셉트,Interceptions,count,True,float64,0,0 – 33
+clearances,defense,클리어링,Clearances,count,True,float64,0,0 – 76
+league,context,리그,League,label,False,object,0,"EPL, LaLiga, Bundesliga, SerieA, Ligue1"
+match_id,context,경기 ID,Match identifier,ID,False,int64,0,11643 – 28353
+season,context,시즌,Season,label,False,object,0,"2019_2020, 2020_2021, 2021_2022, 2022_2023, 2023_2024, 2024_2025"
+date,context,경기 날짜,Match date,YYYY-MM-DD,False,object,0,"2019-08-09, 2019-08-10, 2019-08-11, 2019-08-17, 2019-08-18, 2019-08-19"
+team,context,분석 대상 팀,Team,label,False,object,0,"Liverpool, Bournemouth, Burnley, Crystal Palace, Tottenham Hotspur, Watford"
+opponent,context,상대팀,Opponent,label,False,object,0,"Norwich City, Sheffield United, Southampton, Everton, Aston Villa, Brighton & Hove Albion"
+team_score,context,팀 득점,Team goals,count,False,int64,0,0 – 9
+opponent_score,context,상대팀 득점,Opponent goals,count,False,int64,0,0 – 9
+is_home,context,홈 여부,Home indicator,0/1,False,int64,0,0 – 1
+result,context,경기 결과,Match result,W/D/L,False,object,0,"W, D, L"
+xG,context,기대득점: 슈팅 기회의 득점 가능성을 합산한 값,Expected goals,expected goals,False,float64,0,0 – 6.88
+attack_fouled_in_final_third,auxiliary,공격 1/3 지역에서 얻은 파울,Fouled in final third,count,False,float64,266,0 – 12
+attack_offsides,auxiliary,오프사이드,Offsides,count,False,float64,954,0 – 14
+dispossessed,auxiliary,공 소유 상실,Dispossessed,count,False,float64,0,0 – 27
+duels_duels,auxiliary,경합 관련 백분율 문자열,Duel-related percentage string,percent string; definition unresolved,False,object,0,"60%, 53%, 62%, 57%, 45%, 43%"
+goalkeeping_total_saves,auxiliary,골키퍼 선방,Goalkeeper saves,count,False,float64,104,0 – 19
+match_overview_big_chances,auxiliary,빅찬스,Big chances,count,False,float64,544,0 – 13
+match_overview_corner_kicks,auxiliary,코너킥,Corner kicks,count,False,float64,0,0 – 26
+match_overview_fouls,auxiliary,파울,Fouls,count,False,float64,2,0 – 31
+match_overview_free_kicks,auxiliary,프리킥,Free kicks,count,False,float64,0,0 – 30
+match_overview_yellow_cards,auxiliary,옐로카드,Yellow cards,count,False,float64,630,0 – 9
+passes_throw-ins,auxiliary,스로인,Throw-ins,count,False,float64,0,3 – 49
+shots_blocked_shots,auxiliary,차단된 슈팅,Blocked shots,count,False,float64,0,0 – 18
+shots_hit_woodwork,auxiliary,골대에 맞은 슈팅,Shots hitting woodwork,count,False,float64,0,0 – 5
+shots_shots_off_target,auxiliary,빗나간 슈팅,Shots off target,count,False,float64,0,0 – 21
+shots_shots_outside_box,auxiliary,박스 밖 슈팅,Shots outside the box,count,False,float64,0,0 – 25
+duels_aerial_duels_attempts,auxiliary,공중볼 경합 시도,Aerial duel attempts,count,False,float64,0,2 – 99
+duels_aerial_duels_success_rate,auxiliary,공중볼 경합 성공 비율,Aerial duel success rate,fraction,False,float64,0,0 – 1
+duels_dribbles_success_rate,auxiliary,드리블 성공 비율,Dribble success rate,fraction,False,float64,0,0 – 1
+duels_ground_duels_attempts,auxiliary,지상 경합 시도,Ground duel attempts,count,False,float64,0,35 – 126
+duels_ground_duels_success_rate,auxiliary,지상 경합 성공 비율,Ground duel success rate,fraction,False,float64,0,0.2623 – 0.7377
+passes_crosses_success_rate,auxiliary,크로스 성공 비율,Cross success rate,fraction,False,float64,2,0 – 1
+passes_long_balls_success_rate,auxiliary,롱볼 성공 비율,Long-ball success rate,fraction,False,float64,0,0.0811 – 0.9375
+shots_on_target_rate,auxiliary,유효슈팅 비율,Shots-on-target rate,fraction,False,float64,7,0 – 1
+long_ball_ratio,derived,패스 대비 롱볼 비율,Long balls relative to passes,%,False,float64,0,2.06186 – 106.25
+final_third_entry_ratio,derived,패스 대비 공격 1/3 투입 비율,Final-third entries relative to passes,%,False,float64,0,3.25733 – 82.7957
+dribble_ratio,derived,패스 대비 드리블 비율,Dribbles relative to passes,%,False,float64,0,0.25 – 23.3202
+cross_ratio,derived,패스 대비 크로스 비율,Crosses relative to passes,%,False,float64,0,0 – 26.0417
+dispossessed_ratio,derived,패스 대비 소유 상실 비율,Dispossessions relative to passes,%,False,float64,0,0 – 19.0083
+tackles_padj,derived,점유율 보정 태클,Possession-adjusted tackles,adjusted count,False,float64,0,0.925926 – 69.5652
+interceptions_padj,derived,점유율 보정 인터셉트,Possession-adjusted interceptions,adjusted count,False,float64,0,0 – 40.7407
+clearances_padj,derived,점유율 보정 클리어링,Possession-adjusted clearances,adjusted count,False,float64,0,0 – 83.8235
+PC1,derived,첫 번째 주성분 좌표,First principal component score,score,False,float64,0,-10.2461 – 9.37346
+PC2,derived,두 번째 주성분 좌표,Second principal component score,score,False,float64,0,-11.7001 – 5.42577
+cluster_stage1,derived,1차 군집 번호,Parent cluster ID,0/1,False,int64,0,0 – 1
+cluster_final_num,derived,최종 군집 숫자 번호,Final numeric cluster ID,0–3,False,int64,0,0 – 3
+cluster_final_hier,derived,최종 유형 코드,Final profile code,1-1/1-2/2-1/2-2,False,object,0,"1-1, 2-2, 1-2, 2-1"
+cluster_label,derived,저장된 영문 군집명,Stored English profile label,label,False,object,0,"Progressive Possession, Defensive Direct, High-Possession Control, Low-Possession Defensive"
+cluster_label_kr,derived,저장된 한글 군집명,Stored Korean profile label,label,False,object,0,"점유 전개형, 수비적 전개형, 고점유 지배형, 저점유 수비형"

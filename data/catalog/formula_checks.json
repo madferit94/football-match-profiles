@@ -1,0 +1,34 @@
+{
+  "long_ball_ratio": {
+    "formula": "long_balls / passes * 100",
+    "matches_all_rows": true
+  },
+  "final_third_entry_ratio": {
+    "formula": "final_third_entries / passes * 100",
+    "matches_all_rows": true
+  },
+  "dribble_ratio": {
+    "formula": "dribbles / passes * 100",
+    "matches_all_rows": true
+  },
+  "cross_ratio": {
+    "formula": "crosses / passes * 100",
+    "matches_all_rows": true
+  },
+  "dispossessed_ratio": {
+    "formula": "dispossessed / passes * 100",
+    "matches_all_rows": true
+  },
+  "tackles_padj": {
+    "formula": "tackles * 50 / (100 - possession)",
+    "matches_all_rows": true
+  },
+  "interceptions_padj": {
+    "formula": "interceptions * 50 / (100 - possession)",
+    "matches_all_rows": true
+  },
+  "clearances_padj": {
+    "formula": "clearances * 50 / (100 - possession)",
+    "matches_all_rows": true
+  }
+}

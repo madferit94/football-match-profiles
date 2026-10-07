@@ -1,0 +1,28 @@
+# Include only the two reviewed datasets; keep other raw/intermediate files local.
+data/raw/
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/tactical_analysis_cleaned.csv
+# Historical notebooks write detailed records and unreviewed artifacts here.
+outputs/tables/*
+!outputs/tables/rq1_final_data_14vars_hierarchical_4clusters.csv
+outputs/figures/
+outputs/review-new/
+outputs/review-*/
+# Models, archives, local environment and document binaries
+*.pkl
+*.joblib
+*.zip
+*.pdf
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.claude/
+.idea/
+.vscode/

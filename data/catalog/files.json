@@ -1,0 +1,18 @@
+[
+  {
+    "path": "data/processed/tactical_analysis_cleaned.csv",
+    "bytes": 8280126,
+    "rows": 21394,
+    "columns": 56,
+    "sha256": "2a38edde14de129548ae5f6d8ed60685cf98066e044e4597266ebc2d56895514",
+    "source_copy_unchanged": true
+  },
+  {
+    "path": "outputs/tables/rq1_final_data_14vars_hierarchical_4clusters.csv",
+    "bytes": 4625123,
+    "rows": 21394,
+    "columns": 30,
+    "sha256": "8ee0cfa1ef57567f4e968b7fcbaa479b8e2ab297b631008815e3cf66a0622ba8",
+    "source_copy_unchanged": true
+  }
+]
