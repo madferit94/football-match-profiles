@@ -12,11 +12,11 @@
 
 ## Notebook order and dependencies / 실행 순서와 입력
 
-| Order | Notebook | Input | Key output |
+| Order / 순서 | Notebook / 노트북 | Input / 입력 | Key output / 주요 결과 |
 |---|---|---|---|
 | 1 | `01_rq1_clustering.ipynb` | `data/processed/tactical_analysis_cleaned.csv` | `outputs/tables/rq1_final_data_14vars_hierarchical_4clusters.csv` |
-| 2 | `02_rq2_profile_explanation.ipynb` | RQ1 labeled CSV | Difference tables, surrogate classifiers, SHAP figures |
-| 3 | `03_rq3_league_season_distribution.ipynb` | Same RQ1 labeled CSV | League and season plots/tables |
+| 2 | `02_rq2_profile_explanation.ipynb` | RQ1 labeled CSV / RQ1 라벨 CSV | Difference tables, surrogate classifiers, SHAP figures / 차이 표, 대리 분류 모델, SHAP 그림 |
+| 3 | `03_rq3_league_season_distribution.ipynb` | Same RQ1 labeled CSV / 같은 RQ1 라벨 CSV | League and season plots/tables / 리그·시즌별 그림과 표 |
 
 These are historical execution directions, not a guarantee of current executability. Use a separate working copy and run with working directory at its root or `notebooks/`. Notebook path detection does not support arbitrary nested directories. Running them may rewrite their output files; do not point them at the only preserved original.
 
@@ -26,9 +26,11 @@ These are historical execution directions, not a guarantee of current executabil
 
 The thesis states Python 3.11. Imports in the selected notebooks include NumPy, pandas, matplotlib, seaborn, SciPy, scikit-learn, XGBoost, SHAP, joblib, and IPython. RQ2 also contains an inline `!pip install scikit-posthocs` cell. This is valid notebook shell syntax, but it should be moved into an explicit environment definition in a future cleaned execution version. Do not mistake a plain Python AST parser rejecting `!pip` for a broken Jupyter notebook.
 
-논문에는 Python 3.11로 기재되어 있습니다. 선택한 코드의 라이브러리와 버전은 추후 고정해야 합니다. RQ2의 `!pip install`은 노트북 문법으로는 유효하지만 실행 중 환경을 바꾸므로 정리된 실행본에서는 환경 파일로 분리하는 것이 좋습니다. 이번에는 원본 코드 보존을 위해 변경하지 않았습니다.
+논문에는 Python 3.11로 기재되어 있습니다. 선택한 노트북은 NumPy, pandas, matplotlib, seaborn, SciPy, scikit-learn, XGBoost, SHAP, joblib, IPython을 사용합니다. 선택한 코드의 라이브러리와 버전은 추후 고정해야 합니다. RQ2의 `!pip install`은 노트북 문법으로는 유효하지만 실행 중 환경을 바꾸므로 정리된 실행본에서는 환경 파일로 분리하는 것이 좋습니다. 이번에는 원본 코드 보존을 위해 변경하지 않았습니다.
 
 Korean figure fonts use AppleGothic on macOS and Malgun Gothic on Windows. A Linux environment may need a separately installed Korean font. This is a presentation dependency, not an analytical result.
+
+그림의 한글 글꼴은 macOS에서는 AppleGothic, Windows에서는 Malgun Gothic을 사용합니다. Linux에서는 한글 글꼴을 따로 설치해야 할 수 있습니다. 이는 화면 표시에 필요한 설정이며 분석 결과와는 관계없습니다.
 
 ## Before claiming full reproduction / 전체 재현을 주장하기 전
 
@@ -40,6 +42,15 @@ Korean figure fonts use AppleGothic on macOS and Malgun Gothic on Windows. A Lin
 - Compare new outputs against the selected version, documenting any changes instead of overwriting paper claims.
 
 No new clustering or classification performance result was produced by this packaging task.
+
+- 입력 스냅샷을 고정하고, 논문과 현재 사례 수의 차이를 정리합니다.
+- 모델과 SHAP 호환성을 포함한 깨끗한 환경을 고정합니다.
+- 이전 변수에 기대지 않고 새 커널에서 노트북을 순서대로 실행합니다.
+- 반복된 탐색 셀이 정의가 다른 통계를 같은 이름으로 덮어쓰지 않게 막습니다.
+- 비교 식별자와 일관된 군집 이름으로 결과표를 다시 만듭니다.
+- 새 결과를 선택한 버전과 비교하고, 논문 주장을 덮어쓰지 말고 바뀐 점을 기록합니다.
+
+이번 정리 작업에서 새로운 군집·분류 성능 결과는 만들지 않았습니다.
 
 ## Python companion scripts / 파이썬 사본
 
