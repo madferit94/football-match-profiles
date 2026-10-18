@@ -151,12 +151,6 @@ Both CSVs are bundled, so `--source-root .` reads this repository. The audit ref
 - Instagram: [@madferit94](https://www.instagram.com/madferit94/)
 - GitHub: [@madferit94](https://github.com/madferit94)
 
-### AI assistance
-
-The thesis research, analysis and writing are the author's own. This public repository's documentation, bilingual translation and snapshot audit script were prepared with AI assistance and reviewed by the author.
-
-학위논문의 연구, 분석, 집필은 저자 본인이 수행했습니다. 공개 저장소의 문서 정리, 한영 번역, 검증 스크립트는 AI의 도움을 받아 준비했으며 저자가 검토했습니다.
-
 ## Research background and data sources
 
 This project shares data, analytical steps, and results developed during master's research. Related study: *Clustering Tactical Types and Analyzing Type-Specific Match Characteristics in Football: Evidence from Europe’s Big Five Leagues* (2026). The thesis PDF is not published here.
