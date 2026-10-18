@@ -151,6 +151,12 @@ CSV 2개가 포함되어 있으므로 `--source-root .`으로 현재 폴더를 �
 - Instagram: [@madferit94](https://www.instagram.com/madferit94/)
 - GitHub: [@madferit94](https://github.com/madferit94)
 
+### AI 활용 고지
+
+학위논문의 연구, 분석, 집필은 저자 본인이 수행했습니다. 공개 저장소의 문서 정리, 한영 번역, 검증 스크립트는 AI의 도움을 받아 준비했으며 저자가 검토했습니다.
+
+The thesis research, analysis and writing are the author's own. This public repository's documentation, bilingual translation and snapshot audit script were prepared with AI assistance and reviewed by the author.
+
 ## 연구 배경과 데이터 출처
 
 석사 과정에서 수행한 연구를 기반으로 데이터와 분석 과정·결과를 공유합니다. 관련 연구: 「축구 경기기록 기반 전술 유형 군집화와 유형별 경기기록 특성 분석: 유럽 5대 리그를 중심으로」, 2026. 논문 PDF는 게시하지 않습니다.
